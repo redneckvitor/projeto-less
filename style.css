@@ -12,79 +12,85 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuyJG.ttf) format('truetype');
 }
-.flex-center {
+.flex {
   display: flex;
-  align-items: center;
   text-align: center;
   min-height: 100vh;
 }
-.center {
+.flex-center {
   display: flex;
-  align-items: center;
   text-align: center;
   min-height: 100vh;
+  align-items: center;
+}
+.center {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .center-top {
   display: flex;
-  align-items: center;
   text-align: center;
   min-height: 100vh;
+  align-items: center;
   justify-content: start;
   flex-direction: column;
 }
 .center-bottom {
   display: flex;
-  align-items: center;
   text-align: center;
   min-height: 100vh;
+  align-items: center;
   justify-content: end;
   flex-direction: column;
 }
 .center-left {
   display: flex;
+  text-align: center;
+  min-height: 100vh;
   align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  flex-direction: row;
   justify-content: start;
-}
-.top-left {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-}
-.top-right {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-}
-.left-top {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: start;
-  flex-direction: row;
-}
-.left-bottom {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: end;
   flex-direction: row;
 }
 .center-right {
   display: flex;
-  align-items: center;
   text-align: center;
   min-height: 100vh;
+  align-items: center;
   flex-direction: row;
   justify-content: end;
+}
+.top-left {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  align-items: start;
+  flex-direction: column;
+}
+.top-right {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  align-items: end;
+  flex-direction: column;
+}
+.bottom-left {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  align-items: end;
+  flex-direction: row;
+}
+.bottom-right {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  align-items: end;
+  justify-content: end;
+  flex-direction: row;
 }
 * {
   margin: 0;
@@ -99,9 +105,10 @@ body {
   height: 100vh;
 }
 div {
+  display: flex;
   text-align: center;
   min-height: 100vh;
-  display: flex;
   align-items: end;
+  justify-content: end;
   flex-direction: row;
 }
