@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
-@sans-serif-font: font-family: "Raleway", sans-serif;
-@serif-font: font-family: "Lora", serif;
+// Variáveis
+@sans-serif-font: "Raleway", sans-serif;
+@serif-font: "Lora", serif;
+
+@primary: #3498db;
+@secondary: #ecf0f1;
+@background-primary: #34495e;
+@background-secondary: #2c3e50;
+
+// Mixins
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-center {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
 
 body {
   font-family: @sans-serif-font;
+  background-color: @background-secondary;
+  color: @secondary;
+  .flex-center();
 }
